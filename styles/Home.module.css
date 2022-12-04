@@ -136,6 +136,9 @@
   list-style-type: none;
   margin: auto;
 }
+.nav Link {
+  cursor: pointer;
+}
 .nav li {
   font-weight: 500;
   margin-right: 1.6rem;
