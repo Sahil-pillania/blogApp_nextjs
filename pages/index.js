@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h3 className={styles.title}>Welcome to Web App</h3>
+        <h1 className={styles.title}>Welcome to Blog World</h1>
         <Image
           src={image}
           alt="home page "
