@@ -2,21 +2,22 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/Blog.module.css";
 import Link from "next/link";
 
-const Blog = () => {
-  const [blogs, setblogs] = useState([]);
+const Blog = (props) => {
+  //   console.log(props);
+  const [blogs, setblogs] = useState(props.allBlogs);
 
-  useEffect(() => {
-    /// console.log("useeffect running");
+  //   useEffect(() => {
+  //     /// console.log("useeffect running");
 
-    fetch("http://localhost:3000/api/blogs")
-      .then((a) => {
-        return a.json();
-      })
-      .then((parsed) => {
-        //console.log("data is" + parsed);
-        setblogs(parsed);
-      });
-  }, []);
+  //     fetch("http://localhost:3000/api/blogs")
+  //       .then((a) => {
+  //         return a.json();
+  //       })
+  //       .then((parsed) => {
+  //         //console.log("data is" + parsed);
+  //         setblogs(parsed);
+  //       });
+  //   }, []);
 
   return (
     <div className={styles.main}>
@@ -50,5 +51,14 @@ const Blog = () => {
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`http://localhost:3000/api/blogs`);
+  const allBlogs = await res.json();
+
+  // Pass data to the page via props
+  return { props: { allBlogs } };
+}
 
 export default Blog;
