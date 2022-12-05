@@ -2,10 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import image from "../public/img.jpg";
+import Blog from "./blog";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <style jsx>
         {`
           h2 {
@@ -41,27 +42,7 @@ export default function Home() {
           A blog by the coders for the coders.
         </p>
 
-        <div className="blogs">
-          <h2>Popular blogs</h2>
-          <div className="blogItem">
-            <h3>How to learn javascript.</h3>
-            <p>
-              Javascript is the language used to design the logics for the web.
-            </p>
-          </div>
-          <div className="blogItem">
-            <h3>How to learn javascript.</h3>
-            <p>
-              Javascript is the language used to design the logics for the web.
-            </p>
-          </div>
-          <div className="blogItem">
-            <h3>How to learn javascript.</h3>
-            <p>
-              Javascript is the language used to design the logics for the web.
-            </p>
-          </div>
-        </div>
+        <Blog />
       </main>
 
       {/* <footer className={styles.footer}>
