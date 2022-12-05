@@ -6,14 +6,14 @@ const Blog = () => {
   const [blogs, setblogs] = useState([]);
 
   useEffect(() => {
-    console.log("useeffect running");
+    /// console.log("useeffect running");
 
     fetch("http://localhost:3000/api/blogs")
       .then((a) => {
         return a.json();
       })
       .then((parsed) => {
-        console.log("data is" + parsed);
+        //console.log("data is" + parsed);
         setblogs(parsed);
       });
   }, []);
