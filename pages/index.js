@@ -41,7 +41,6 @@ export default function Home() {
         <p className={styles.description}>
           A blog by the coders for the coders.
         </p>
-
         <Blog />
       </main>
 

@@ -16,7 +16,7 @@ const About = () => {
         <h1>About our Blog App</h1>
         <hr />
         <h2>Introduction</h2>
-        <span className={styles.imagediv}></span>
+
         <p>
           <p>
             <Image

@@ -12,6 +12,9 @@
   justify-content: center;
   align-items: center;
 }
+.main h2 {
+  margin-bottom: 2rem;
+}
 .main p {
   text-align: justify;
 }

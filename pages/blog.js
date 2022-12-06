@@ -23,16 +23,17 @@ const Blog = (props) => {
     <div className={styles.main}>
       <h2>Popular blogs</h2>
 
-      {blogs.map((item) => {
-        return (
-          <div className="blogItem">
-            <Link href={`/blogpost/${item.slug}`}>
-              <h3>{item.title}</h3>
-            </Link>
-            <p>{item.content.substr(0, 200)}...</p>
-          </div>
-        );
-      })}
+      {blogs &&
+        blogs.map((item, i) => {
+          return (
+            <div className="blogItem" key={i}>
+              <Link href={`/blogpost/${item.slug}`}>
+                <h3>{item.title}</h3>
+              </Link>
+              <p>{item.content.substr(0, 200)}...</p>
+            </div>
+          );
+        })}
 
       {/* <div className="blogItem">
         <Link href={"/blogpost/learn-javascript"}>
