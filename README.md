@@ -26,3 +26,4 @@ This project is developed using Next js framework.
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/80634110/206105987-c3bef995-d2bc-43aa-89fa-1c1b5acf6712.png">
 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/80634110/206106298-76033e62-63be-4d71-b514-18dff8f4a65f.png">
