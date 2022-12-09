@@ -9,17 +9,17 @@ This project is developed using Next js framework.
 
 ## Tech Stack
 
-**Client:** React, Next js, CSS
+ **Client:** React, Next js, CSS
 
-**Server:** Node, Next js
+ **Server:** Node, Next js
 
 
 ## Features
 
-- Blogs
-- Contact us page 
-- Independent components
-- Cross platform
+ - Blogs
+ - Contact us page 
+ - Independent components
+ - Cross platform
 
 ## Screenshots: 
 <img width="948" alt="image" src="https://user-images.githubusercontent.com/80634110/206105868-7283c7ca-4458-43b0-bf66-892e58ee5a0a.png">
